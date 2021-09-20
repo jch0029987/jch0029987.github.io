@@ -3,8 +3,9 @@ body {
   color: blue;
 }
  h1{
-     font-size: 70px;
+     
      text-align: center;
+     background-color:
  }
 
  ul {
@@ -13,7 +14,7 @@ body {
    padding: 0;
    text-align: center;
  }
-.topnav {
+ .topnav {
   background-color: #333;
   overflow: hidden;
 }
@@ -44,4 +45,25 @@ body {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+.column {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+
+
+* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
 }
